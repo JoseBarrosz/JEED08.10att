@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00192F;
+    color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #00192F;
+  font-family: 'Poppins';
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box; /* Certifica-se de que padding seja incluído na largura */
+}
+
+.logo {
+  flex-shrink: 0; /* Evita que a logo encolha */
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1; /* Faz o menu ocupar o espaço disponível */
+  justify-content: center; /* Centraliza o menu */
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f27d00;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empurra o botão para a direita */
+}
+
+.login-button a {
+  background-color: #f68b1e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.login-button a:hover {
+  background-color: #dd7e20;
+}
+
+hr{
+  margin-top: 50px;
+}
+
+.logo img {
+  width: 75px;
+}
+
+
+.sobre a {
+  color: #fff;
+  font-size: 1.2em;
+}
+  main {
+      text-align: center;
+      margin: 40px 0;
+  }
+  
+  h1 {
+      font-size: 65px;
+      font-family: 'Anton';
+  }
+  
+  .bracket {
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .soma-quartas{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 90px;
+    margin-top: 65px;
+  }
+
+  .soma-quartasImg{
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .soma-quartasImg:hover{
+    transform: scale(1.3) ; 
+  }
+  
+  .quartas {
+      margin-left: 10px;
+      
+  }
+
+  .linha1{
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+
+  .ftlinha1{
+    width: 90px;
+    margin-right: 00px;
+    margin-top: 40px;
+  }
+
+  .linha2{
+    margin: 0px;
+  }
+
+  
+  .ftlinha2{
+    width: 90px;
+    margin-top: 125px;
+  }
+
+  .linha3{
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 50px;
+  }
+
+  .ftlinha3{
+    width: 88px;
+    margin-top: 87px;
+  }
+
+  .linha4{
+    align-items: center;
+    margin-top: 205px;
+    margin-bottom: 50px;
+  }
+
+  .ftlinha4{
+    width: 88px;
+    margin-top: 87px;
+  }
+
+  .soma-semi{
+    display: flex;
+    flex-direction: column;
+    gap: 210px;
+    margin-left: 90px;
+    margin-top: 130px;
+  }
+
+  .semi {
+      margin-left: 10px;
+      margin-top: 50px;
+  }
+
+  .soma-final{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 90px;
+    margin-top: 270px;
+  }
+
+  .final {
+      margin-left: 10px;
+      margin-top: 55px;
+  }
+
+  .campeao{
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna (imagem em cima da div) */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    margin-left: 30px;
+    margin-top: 95px;
+  }
+
+  .trofeu{
+    margin: 0; /* Remove as margens para grudar a imagem na div */
+    width: 300px; /* Ajusta o tamanho da imagem se necessário */
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .match {
+      background-color: #00192F;
+      margin: 10px 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 300px;
+      height: 40px;    
+  }
+
+  .match2 {
+    background-color: #00192F;
+    margin-top: 65PX;
+   
+}
+
+.match3 {
+    background-color: #00192F;
+    margin-top: 180px;   
+}
+
+.match4 {
+  background-color: #00192F;
+  margin-top: 200px;  
+}
+
+.match5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+   
+}
+
+.team-name {
+  flex:1;
+  color: #00192F; 
+  margin-top: 10px;
+}
+  
+.team1, .team2, .team3, .team4, .team5, .team6, .team7, .team8, .team9, .team10, .team11, .team12, .team13, .team14, .team15 {
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  width: 300px;
+  height: 40px;
+  background: linear-gradient(to right, #d3d3d3, #ffffff) padding-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.team15{
+margin-top: 0; /* Remove a margem entre a imagem e a div */
+background: linear-gradient(to right, #d3d3d3, #ffffff) padding-box,
+linear-gradient( to right, #ff8800, #ffd700 100%, transparent 2%, transparent 98%, #ffd700 98%, #ffd700) border-box;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+border-radius: 5px;
+border: 3px solid transparent;
+}
+
+    .placar1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 0;
+        
+    }
+
+    .placar2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 0;
+        
+    }
+  
+    .seta-dupla{
+        width: 30px;
+    }
+    
+    .seta-dupla:hover{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(0deg) brightness(103%) contrast(103%);
+    }

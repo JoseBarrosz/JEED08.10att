@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00192F;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00192F;
+    font-family: 'Poppins';
+    border-bottom: 2px solid #000000;
+    box-sizing: border-box; /* Certifica-se de que padding seja incluído na largura */
+}
+ 
+.logo {
+    flex-shrink: 0; /* Evita que a logo encolha */
+}
+ 
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Faz o menu ocupar o espaço disponível */
+    justify-content: center; /* Centraliza o menu */
+}
+ 
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+ 
+.nav-menu a:hover {
+    color: #f27d00;
+}
+ 
+.login-button {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+ 
+.login-button a {
+    background-color: #f68b1e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+ 
+.login-button a:hover {
+    background-color: #dd7e20;
+}
+ 
+.logo img {
+    width: 75px;
+}
+
+hr{
+    width: 97%;
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #00192F 65%, white 65%);
+    
+}
+
+.equipes {
+    border-radius: 50px;
+    background-color: #032339;
+    padding: 40px;
+    width: 54.2%;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+
+}
+
+h1 {
+    display: flex;
+    font-size: 65px;
+    font-family: 'Anton';
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: column;
+    margin-right: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Anton';
+    margin-left: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 10px;
+    background-color: #f27d00;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 350px;
+    font-family: 'Arimo';
+    cursor: pointer;
+    font-size: 17px;
+}
+ 
+.botao-gerar {
+    text-align: center;
+    margin-top: 40px;
+   
+}
+ 
+.btn:hover {
+    background-color: #dd7e20 ;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+  }
+ 
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+  }
+ 
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+ 
+  .footer-logo {
+    width: 70px;
+    height: 70px;
+  }
+ 
+  #contato {
+    margin-left: 0;
+  }
+ 
+  .footer-section h4 {
+    color: #ff6b00;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+ 
+  .footer-section p,
+  .footer-section a {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+ 
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+ 
+  .logo-section .footer-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .menu-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+  .menu-section ul li {
+    margin-bottom: 10px;
+  }
+ 
+  .menu-section ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+ 
+  .menu-section ul li a:hover {
+    text-decoration: underline;
+  }
+ 
+  .download-buttons img {
+    max-width: 140px;
+    margin-right: 10px;
+    width: 40px;
+   
+  }
+
+  .card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border: #F18106 solid 2px;
+    border-radius: 20px;
+    padding: 0px 15px;
+}
+
+.nome {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-weight: 700;
+}
+
+.rodapetext{
+    text-align: center;
+    border-radius: 100px;
+}

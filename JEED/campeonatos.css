@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00192F;
+    color: #ffffff;
+}
+ 
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00192F;
+    font-family: 'Poppins';
+    border-bottom: 2px solid #000000;
+    box-sizing: border-box; /* Certifica-se de que padding seja incluído na largura */
+}
+ 
+.logo {
+    flex-shrink: 0; /* Evita que a logo encolha */
+}
+ 
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Faz o menu ocupar o espaço disponível */
+    justify-content: center; /* Centraliza o menu */
+}
+ 
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+ 
+.nav-menu a:hover {
+    color: #f27d00;
+}
+ 
+.login-button {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+ 
+.login-button a {
+    background-color: #f68b1e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+ 
+.login-button a:hover {
+    background-color: #dd7e20;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+.logo img {
+    width: 75px;
+}
+ 
+ 
+.sobre a {
+    color: #fff;
+    font-size: 1.2em;
+}
+ 
+main {
+    display: flex ;
+    justify-content: center;
+    height: 700px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #00192F 65%, white 65%);
+}
+ 
+.container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+section.campeonatos {
+    text-align: center;
+    background-color: #032339;
+    padding: 40px;
+    width: 54.2%;
+    margin: 65px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+    border-radius: 50px;
+}
+ 
+section.campeonatos h1 {
+    font-size: 65px;
+    margin-bottom: -65px;
+    margin-right: 350px;
+    margin-top: 10px;
+    font-family: 'Anton';
+}
+ 
+section.campeonatos .search {
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+   
+}
+ 
+section.campeonatos .search input {
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+ 
+section.campeonatos .search button {
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+ 
+section.campeonatos .search button img {
+    width: 18px;
+}
+ 
+section.campeonatos p {
+    margin: 20px ;
+    margin-top: 50px;
+    font-family: 'Open Sans';
+}
+ 
+section.campeonatos .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #125C70;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 200px;
+    width: 250px;
+    font-family: 'Arimo';
+}
+ 
+section.campeonatos .btn:hover {
+    background-color: #7B94A5;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+ 
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+  }
+ 
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+ 
+  .footer-logo {
+    width: 70px;
+    height: 70px;
+  }
+ 
+  #contato {
+    margin-left: 0;
+  }
+ 
+  .footer-section h4 {
+    color: #ff6b00;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+ 
+  .footer-section p,
+  .footer-section a {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+ 
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+ 
+  .logo-section .footer-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+ 
+  .menu-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+  .menu-section ul li {
+    margin-bottom: 10px;
+  }
+ 
+  .menu-section ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+ 
+  .menu-section ul li a:hover {
+    text-decoration: underline;
+  }
+ 
+  .download-buttons img {
+    max-width: 140px;
+    margin-right: 10px;
+    width: 40px;
+   
+  }
+ 
+ 
+.card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border: #F18106 solid 2px;
+    border-radius: 20px;
+    padding: 0px 15px;
+}
+ 
+.nome {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-weight: 700;
+}
+ 
+.data, .hora, .equipes {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color: #F18106;
+    font-weight: bold;
+}
+ 
+.containerequipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+.card button {
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F18106;
+    border: #F18106 2px solid;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+ 
+.card button:hover {
+    background-color: #fff;
+    color: #F18106;
+    transition: .3s ease-in-out;
+}
+ 
+.rodapetext{
+    text-align: center;
+    border-radius: 100px;
+}

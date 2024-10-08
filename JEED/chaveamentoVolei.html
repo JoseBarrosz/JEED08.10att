@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaveamento</title>
+    <link rel="stylesheet" href="chaveamentoVolei.css">
+    <script type="text/javascript" src="chaveamentoVolei.js" defer></script>
+    <script src="placarVolei.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="img/logoJEED.png" alt="Logo JEED">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">INICIO</a>
+            <a href="index.html#container3">CARACTERÍSTICAS</a>
+            <a href="index.html#container4">CAMPEONATOS</a>
+            <a href="index.html#contato">FALE CONOSCO</a>
+        </nav>
+        <div class="login-button">
+            <a href="login.html">Acessar conta</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <h1>Chaveamento Vôlei</h1>
+            <div class="bracket">
+                <div class="soma-quartas">
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="1"> 
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="2"> 
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="3"> 
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="4"> 
+                </div>
+                
+                <div class="quartas">
+                    <div class="match1"> 
+                        <div class="team1"><div class="team-name"></div><div class="placar1"><h2 id="placar1" class="resultado"></h2><span class="score1"></span></div></div>
+                        <div class="team2"><div class="team-name"></div> <div class="placar2"><h2 id="placar2"></h2><span class="score2"></span></div></div>
+                    </div>
+                    <div class="match2">
+                        <div class="team3"><div class="team-name"></div> <div class="placar3"><h2 id="placar3"></h2><span class="score3"></span></div></div>
+                        <div class="team4"><div class="team-name"></div> <div class="placar4"><h2 id="placar4"></h2><span class="score4"></span></div></div>
+                    </div>
+                    <div class="match3">
+                        <div class="team5"><div class="team-name"></div> <div class="placar5"><h2 id="placar5"></h2><span class="score5"></span></div></div>
+                        <div class="team6"><div class="team-name"></div> <div class="placar6"><h2 id="placar6"></h2><span class="score6"></span></div></div>
+                    </div>
+                    <div class="match4">
+                        <div class="team7"><div class="team-name"></div> <div class="placar7"><h2 id="placar7"></h2><span class="score7"></span></div></div>
+                        <div class="team8"><div class="team-name"></div> <div class="placar8"><h2 id="placar8"></h2><span class="score8"></span></div></div>
+                    </div>
+                </div>
+                <div class="linha1">
+                    <img src="img/linha1.png" class="ftlinha1">
+                    <div class="linha2">
+                        <img src="img/linha1.png" class="ftlinha2">
+                    </div>
+                </div>
+
+                <div class="soma-semi">
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="5">
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="6">
+                </div>
+
+                <div class="semi">
+                    <div class="match5">
+                        <div class="team9"><div class="team-name"></div> <div class="placar9"><h2 id="placar9"></h2><span class="score9"></span></div></div>
+                        <div class="team10"><div class="team-name"></div> <div class="placar10"><h2 id="placar10"></h2><span class="score10"></span></div></div>
+                    </div>
+                    <div class="match6">
+                        <div class="team11"><div class="team-name"></div> <div class="placar11"><h2 id="placar11"></h2><span class="score11"></span></div></div>
+                        <div class="team12"><div class="team-name"></div> <div class="placar12"><h2 id="placar12"></h2><span class="score12"></span></div></div>
+                    </div>
+                </div>
+
+                <div class="linha3">
+                    <img src="img/linha3.png" class="ftlinha3">
+                </div>
+
+                <div class="soma-final">
+                    <img src="img/soma.png" class="soma-quartasImg" data-match="7">
+                </div>               
+
+                <div class="final">
+                    <div class="match7">
+                        <div class="team13"><div class="team-name"></div> <div class="placar13"><h2 id="placar13"></h2><span class="score13"></span></div></div>
+                        <div class="team14"><div class="team-name"></div> <div class="placar14"><h2 id="placar14"></h2><span class="score14"></span></div></div>
+                    </div>
+                </div>
+                <div class="linha4">
+                    <img src="img/linha4.png" class="ftlinha4">
+                </div>
+
+                <div class="campeao">
+                    <img src="img/trofeu.png" class="trofeu">
+                    <div class="match8">
+                        <div class="team15"><div class="team-name"></div></div>
+                    </div>
+                </div>
+
+                <!-- Modal Estrutura -->
+                <div id="placarModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="save-button-container">
+                            <button class="save-button" id="saveResultadoBtn">Salvar Resultado</button>
+                        </div>
+                        <div class="time" id="timeA">
+                            <h2 id="teamA">Time A</h2>
+                            <div class="set-pontos">
+                                <div class="sets">
+                                    <span id="setsA">0</span><br>
+                                    <span>Sets</span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="pontos">
+                                    <span id="pontosA">0</span><br>
+                                    <span>Pontos</span>
+                                </div>
+                            </div>
+                            <div class="soma-menos">
+                                <button onclick="incrementarPonto('pontosA', 'setsA')">+</button>
+                                <button onclick="decrementarPonto('pontosA')">-</button>
+                            </div>
+                        </div>
+                        
+                        <div class="time" id="timeB">
+                            <h2 id="teamB">Time B</h2>
+                            <div class="set-pontos">
+                                <div class="sets">
+                                    <span id="setsB">0</span><br>
+                                    <span>Sets</span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="pontos">
+                                    <span id="pontosB">0</span><br>
+                                    <span>Pontos</span>
+                                </div>
+                            </div>
+                            <div class="soma-menos">
+                                <button onclick="incrementarPonto('pontosB', 'setsB')">+</button>
+                                <button onclick="decrementarPonto('pontosB')">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('placarModal');
+    const closeModalBtn = document.querySelector('.close');
+    const saveBtn = document.getElementById('saveResultadoBtn');
+    let currentMatch = null;
+
+    // Função para abrir o modal e preencher os nomes das equipes
+    function openModal(matchId) {
+        modal.style.display = 'block';
+        currentMatch = matchId;
+
+        const teamA = document.querySelector(`.match${matchId} .team${(matchId * 2) - 1} .team-name`).textContent;
+        const teamB = document.querySelector(`.match${matchId} .team${(matchId * 2)} .team-name`).textContent;
+
+        document.getElementById('teamA').textContent = teamA;
+        document.getElementById('teamB').textContent = teamB;
+
+        // Resetando os sets e pontos do modal
+        document.getElementById('setsA').textContent = '0';
+        document.getElementById('pontosA').textContent = '0';
+        document.getElementById('setsB').textContent = '0';
+        document.getElementById('pontosB').textContent = '0';
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        modal.style.display = 'none';
+        currentMatch = null;
+    }
+
+    // Abrir modal ao clicar na imagem de soma
+    document.querySelectorAll('.soma-quartasImg').forEach(img => {
+        img.addEventListener('click', function () {
+            const matchId = this.getAttribute('data-match');
+            openModal(matchId);
+        });
+    });
+
+    // Fechar modal ao clicar no botão de fechar
+    closeModalBtn.addEventListener('click', closeModal);
+
+    // Função para salvar o resultado e enviar o vencedor para a próxima fase
+    function salvarResultado() {
+        const setsA = parseInt(document.getElementById('setsA').textContent);
+        const setsB = parseInt(document.getElementById('setsB').textContent);
+
+        let vencedor;
+        if (setsA > setsB) {
+            vencedor = document.getElementById('teamA').textContent;
+        } else {
+            vencedor = document.getElementById('teamB').textContent;
+        }
+
+        let proximaFaseMatchId;
+        if (currentMatch <= 4) { // Quartas para Semifinais
+            proximaFaseMatchId = Math.ceil(currentMatch / 2) + 4; // match5 ou match6
+        } else if (currentMatch <= 6) { // Semifinais para Final
+            proximaFaseMatchId = 7; // match7
+        } else {
+            proximaFaseMatchId = 8; // Final para Campeão
+        }
+
+        // Atualizar o nome do vencedor na próxima fase
+        const proximaFaseTeam = document.querySelector(`.match${proximaFaseMatchId} .team${currentMatch % 2 === 0 ? proximaFaseMatchId * 2 : (proximaFaseMatchId * 2) - 1} .team-name`);
+        if (proximaFaseTeam) {
+            proximaFaseTeam.textContent = vencedor;
+        }
+
+        // Atualizar os placares do time A e time B nos respectivos h2
+        const placarAElement = document.getElementById(`placar${(currentMatch * 2) - 1}`);
+        const placarBElement = document.getElementById(`placar${currentMatch * 2}`);
+        if (placarAElement) {
+            placarAElement.textContent = setsA;
+        }
+        if (placarBElement) {
+            placarBElement.textContent = setsB;
+        }
+
+        // Resetar os valores do modal
+        document.getElementById('setsA').textContent = '0';
+        document.getElementById('pontosA').textContent = '0';
+        document.getElementById('setsB').textContent = '0';
+        document.getElementById('pontosB').textContent = '0';
+
+        closeModal();
+    }
+
+    // Salvar resultado ao clicar no botão "Salvar Resultado"
+    saveBtn.addEventListener('click', salvarResultado);
+});
+
+
+
+                </script>    
+        </main>
+    </div>
+
+</body>
+</html>

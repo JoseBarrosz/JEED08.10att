@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEED</title>
+    <link rel="stylesheet" href="criacao.css">
+    <script type="text/javascript" src="criacao.js" defer></script>
+   
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logoJEED.png" alt="Logo JEED">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.php">INICIO</a>
+            <a href="index.php#container3">CARACTERÍSTICAS</a>
+            <a href="index.php#container4">CAMPEONATOS</a>
+            <a href="index.php#contato">FALE CONOSCO</a>
+        </nav>
+     
+    </header>
+       
+    <main>
+       
+        <section class="novo-campeonato">
+            <h1>NOVO CAMPEONATO</h1>
+            <hr>
+            <form action="salvar_campeonato.php" method="post" onsubmit="return prepareToRedirect()">
+                <label for="nome-campeonato">NOME DO <span style="color: #7B94A5;">CAMPEONATO</span></label>
+                <input type="text" id="nome-campeonato" name="nome-campeonato" placeholder="Digite o nome do campeonato" maxlength="25" required>
+
+                <label for="data-horario">DATA E <span style="color: #7B94A5;" >HORÁRIO</span></label>
+                <div class="date-time">
+                    <input type="date" id="data-horario" name="data-horario" required>
+                    <input type="time" id="hora-horario" name="hora-horario" required>
+                </div>
+
+                <label for="numero-equipes">NÚMERO DE <span style="color: #7B94A5;" >EQUIPES</span></label>
+                <input type="number" id="numero-equipes" name="numero-equipes" placeholder="Mínimo 2, Máximo 8" min="2" max="8" required>
+               
+
+                <section class="modalidades">
+                    <h2>MODALIDADES</h2>
+                    <div class="todas-modalidades">
+                    <div class="modalidade" id="futsal" name="modalidade">
+                        <img src="img/futsal.png" alt="Futsal">
+                        <p>FUTSAL</p>
+                    </div>
+       
+                    <div class="modalidade" id="basquete" name="modalidade">
+                        <img src="img/bask.png" alt="Basquete">
+                        <p>BASQUETE</p>
+                    </div>
+                    <div class="modalidade" id="volei" name="modalidade">
+                        <img src="img/volei.png" alt="Vôlei">
+                        <p>VÔLEI</p>
+                    </div>
+                    <div class="modalidade" id="queimada" name="modalidade">
+                        <img src="img/queimada.png" alt="Tênis de Mesa" id="queimada">
+                        <p>QUEIMADA</p>
+                    </div>
+                </div>
+
+                <div id="error-message" style="color: red; margin-top: 10px;"></div>
+               
+                    <input type="hidden" name="modalidade_selecionada" id="modalidade_selecionada">
+                    <div class="botao-criar">
+                        <button type="submit" class="btn" id="criar-campeonato">Criar Campeonato</button>
+           
+                </section>
+            </form>
+        </section>
+
+    </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section logo-section">
+            <img src="img/logoredonda.png" alt="Logo JEED" class="footer-logo">
+            <p id="contato">jeedetec@gmail.com</p>
+            <a href="#">Política de privacidade</a>
+          </div>
+          <div class="footer-section menu-section">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#index.php#container">Início</a></li>
+              <li><a href="#index.php#container3">Características</a></li>
+              <li><a href="#index.php#container4">Campeonatos</a></li>
+              <li><a href="#index.php#contato">Fale Conosco</a></li>
+            </ul>
+          </div>
+          <div class="footer-section downloads-section">
+            <h4>Redes Socias</h4>
+            <p id="contato">Você pode usar nossas redes sociais para entrar em contato conosco:</p>
+            <div class="download-buttons">
+              <a href="#"><img src="img/face.png" alt="Facebook"></a>
+              <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+          <p class="rodapetext">© 2024 JEED. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+     
+</body>
+
+
+<script>
+    const modalidades = document.querySelectorAll('.modalidade');
+    let modalidadeSelecionada;
+
+    modalidades.forEach(modalidade => {
+        modalidade.addEventListener('click', () => {
+            modalidades.forEach(m => m.classList.remove('selected'));
+            modalidade.classList.add('selected');
+            modalidadeSelecionada = modalidade.id;
+            document.getElementById('modalidade_selecionada').value = modalidadeSelecionada;
+        });
+    });
+
+
+        function prepareToRedirect() {
+        const numEquipes = document.getElementById('numero-equipes').value;
+ 
+        // Redirecionar para a página com base na modalidade selecionada
+        if (modalidadeSelecionada) {
+            if (modalidadeSelecionada === 'futsal') {
+                window.location.href = `equipes8.html?numero-equipes=${numEquipes}`;
+            } else if (modalidadeSelecionada === 'basquete') {
+                window.location.href = `equipesBask.html?numero-equipes=${numEquipes}`;
+            } else if (modalidadeSelecionada === 'volei') {
+                window.location.href = `equipesVolei.html?numero-equipes=${numEquipes}`;
+            } else if (modalidadeSelecionada === 'queimada') {
+                window.location.href = `equipesQueimada.html?numero-equipes=${numEquipes}`;
+            }
+        }
+ 
+        return false; // Previne o envio do formulário original
+    }
+</script>
+
+</html>
